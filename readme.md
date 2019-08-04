@@ -114,3 +114,17 @@ addEventListener三个参数："click",function,true
 
 #q15. js拖拽功能的实现
     
+#q16. 类的创建和继承
+
+#q17. 300ms
+  click在 ios 手机上有300ms延迟，原因及解决方法
+    1. <meta name="viewport" content="width=device-width,initial-scale=no"/>
+    2. fastclick, 其原理是检测到 touchend事件后，立刻发出模拟click事件，并把浏览器300ms之后真实发出的事件阻断
+
+#q18. Cookie sessionStorage localStorage
+  Cookie: 数据始终在同源的http请求中携带（即使不需要），即cookie在浏览器和服务器间来回传递。而sessionStorage和localStorage不会自动把数据发给服务器，仅在本地保存。cookie数据还有路径（path）的概念，可以限制cookie只属于某个路径下,存储的大小很小只有4K左右。 
+
+  sessionStorage：仅在当前浏览器窗口关闭前有效，自然也就不可能持久保持。
+  localStorage：在所有的同源窗口都是共享的。始终有效，窗口或浏览器关闭也一直保存。
+  cookie: 也是在所有的同源窗口都是共享的。只在设置的cookie过期时间之前一直有效，即使窗口或浏览器关闭。
+
